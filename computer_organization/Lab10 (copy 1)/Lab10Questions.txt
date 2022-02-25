@@ -1,0 +1,69 @@
+CPSC 2310 Spring 2021
+Lab 10 Questions
+
+Jacob Vickio, jvickio, 2
+
+1. As discussed in the lab writeup, the locations for min and max are 
+	-8(%rbq) and -4(%rbq), which are 4 apart. How far apart would these
+	addresses be if min and max were chars instead of ints? Why?
+	What if they were doubles? 
+	(You can test this)
+
+If the variables were chars instead of ints, the addresses would only be 1 apart rather than 4
+apart because of the size of a char. If they were doubles instead of ints, the addresses would 
+be 8 apart instead of 4 apart because of the size of a double.
+
+2. Alter the values assigned to min and max in the driver.s file
+	| min | max | result
+	=======================
+	| 0   | 10  | 0 1 2 3 4 5 6 7 8 9 10
+	| 5   | 10  | 5 6 7 8 9 10
+	| 10  | 0   | 0
+	| -5  | 1   | -5 -4 -3 -2 -1 0 1
+
+3. What are these lines doing in driver.s?
+
+	movl  -8(%rbp), %eax  # min, tmp89
+   	movl  %eax, -12(%rbp)   # tmp89, i
+
+These lines are setting i equal to min.
+
+4. What happens when you change the jump conditional to jl instead of jle?
+	What if you change it to jg? Why?
+
+jl forces the conditional to check for less than exclusive. jg forces the the conditional to check for greater than exclusive.
+
+5. The last line in .L3 handles the for loop change (i++)
+   The third line in .L2  handles the for loop conditional (i < max)
+(The first two lines in .L2 handle the initialization, but we won't alter that)
+	
+Fill in the resulting loop and print out when we change the x86 commands 
+(*some of these create infinite loops so testing directly may take awhile, 
+try to logic through it first. If there is an infinite loop, write "infinite
+loop" as the printout)
+
+	.L3         | .L2  |        for loop             |    printout
+===========================================================================
+addl  $1, -12(%rbp) | jle  | for(i = min; i <= max; i++) | 0 1 3 4.... 10
+subl  $1, -12(%rbp) | jle  | for(i = min; i <= max; i--) | infinite loop
+addl  $2, -12(%rbp) | jl   | for(i = min; i < max; i++)  | 0 2 4 6 8
+mull  $2, -12(%rbp) | jge  | for(i = min; i >= max; i*2) | 
+addl  $1, -8(%rbp)  | jle  | for(i = min; i <= max; i++) | infinite loop
+
+
+6. lsl r4, r3, #2 is the same as r4 = 4 * r3. Explain
+
+   Since #2 is half of 4, r3 is being shifted 2 bits to the left logically. This has the same
+   affect as multiplying by 4 with binary numbers.
+
+   ldr r5, [r0, r4] is the same as r5 = arr[i] in this case. How does this work
+ 
+   Because with the brackets, it is known that the value loaded in r5 will be from the r0 or r4 register.
+
+7. In the beginning of a function in ARM, we push lr onto the stack. At the
+   end, we pop that value into pc. Why is this important? What does it 
+   accomplish?	
+
+LR is the link register and whenever a call is performed, BL (return address) is moved to the link register.
+It is popped into PC because that value will be transported to the next branch location. It accomplishes 
+successfully returning a value from a function. 

@@ -1,0 +1,11 @@
+4a. O(n)
+4b. O(n + m)
+4c. O(n + m)
+4d. theta(n)
+4e. theta(n logn)
+4f. O(n logn)
+4g. O(logn)
+4h. O(n logn)
+4i. O(n logn)
+4j. O(logn)
+

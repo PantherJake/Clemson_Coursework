@@ -1,0 +1,8 @@
+DO NOT USE:
+make
+make run
+
+ONLY USE:
+make run file1= *desired input* file2= *desired output*
+
+Thanks.

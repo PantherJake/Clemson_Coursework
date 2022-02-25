@@ -1,0 +1,502 @@
+%PDF-1.3
+%–”‘Ã
+1 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+/Dests 5 0 R
+/PageMode /UseNone
+>>
+endobj
+2 0 obj
+<<
+/Type /Outlines
+/Count 0
+>>
+endobj
+3 0 obj
+<<
+/Type /Pages
+/MediaBox [ 0 0 612 792 ]
+/Count 2
+/Kids [ 6 0 R 8 0 R ]
+>>
+endobj
+4 0 obj
+[ /PDF /Text /ImageB /ImageC /ImageI ] 
+endobj
+5 0 obj
+<<
+
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources << /Font << /F1 10 0 R /F2 12 0 R /F3 14 0 R /F4 16 0 R >> /ProcSet 4 0 R >>
+/Annots [ ]
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 19 0 R
+>>
+stream
+q
+Q q
+1.000 g 1.000 G
+0 0 m 612 0 l 612 792.0 l 0 792.0 l 0 0 l  f
+Q q 612 760.32 m 26.88 760.32 l 26.88 0 l 612 0 l h W n
+1.000 g 1.000 G
+59.52 423.84 m 269.28 423.84 l 269.28 417.12 l 59.52 417.12 l h f*
+BT
+0 g 0 G
+/F1 1 Tf
+4.93 0 0 4.93 0 0 Tm
+4.93 0 0 4.93 0 0 Tm 12.028 85.272 Td (Craig Chambers) Tj
+20.538 0 Td (148) Tj
+18.452 0 Td (CSE 501) Tj
+ET
+0.48 w
+3.86 M
+[] 0 d
+35.04 417.32 m 35.04 748.12 l 35.04 749.191 35.466 750.219 36.223 750.977 c 36.981 751.734 38.009 752.16 39.08 752.16 c 289.24 752.16 l 290.311 752.16 291.339 751.734 292.097 750.977 c 292.854 750.219 293.28 749.191 293.28 748.12 c 293.28 417.32 l 293.28 416.248 292.854 415.221 292.097 414.463 c 291.339 413.706 290.311 413.28 289.24 413.28 c 39.08 413.28 l
+38.009 413.28 36.981 413.706 36.223 414.463 c 35.466 415.221 35.04 416.248 35.04 417.32 c h S
+1.000 g 1.000 G
+51.36 728.16 m 277.44 728.16 l 277.44 437.28 l 51.36 437.28 l h f*
+BT
+0 g 0 G
+/F2 1 Tf
+8.97 0 0 8.97 0 0 Tm
+8.97 0 0 8.97 0 0 Tm 5.710 80.501 Td (Optimizing loops for the memory hierarchy) Tj
+/F3 1 Tf
+8.07 0 0 8.07 0 0 Tm
+8.07 0 0 8.07 0 0 Tm 6.347 86.051 Td (A typical loop walks over lots of data \(long arrays\)) Tj
+8.07 0 0 8.07 0 0 Tm 6.347 84.494 Td (Enclosing loops lead to repeated traversals of same data) Tj
+8.07 0 0 8.07 0 0 Tm 6.347 82.938 Td (Want to restructure loops to revisit data) Tj
+8.07 0 0 8.07 0 0 Tm 7.848 81.660 Td (while they are in cheap memory) Tj
+8.07 0 0 8.07 0 0 Tm 6.347 78.548 Td (Example: matrix multiply) Tj
+/F4 1 Tf
+8.07 0 0 8.07 0 0 Tm 6.848 75.435 Td (for i := 1 to N) Tj
+8.07 0 0 8.07 0 0 Tm 8.849 73.880 Td (for j := 1 to M) Tj
+8.07 0 0 8.07 0 0 Tm 10.849 72.323 Td (for k := 1 to L) Tj
+8.07 0 0 8.07 0 0 Tm 12.850 70.767 Td (c[i,j] += a[i,k] * b[k,j]) Tj
+8.07 0 0 8.07 0 0 Tm 6.347 67.654 Td (a[i,*]) Tj
+/F3 1 Tf
+3.602 0 Td ( visited repeatedly, but usually flushed from cache) Tj
+/F4 1 Tf
+8.07 0 0 8.07 0 0 Tm 6.347 66.098 Td (b[*,j]) Tj
+/F3 1 Tf
+3.602 0 Td ( similar, though less extreme) Tj
+/F4 1 Tf
+8.07 0 0 8.07 0 0 Tm 6.347 64.542 Td (c[i,j]) Tj
+/F3 1 Tf
+3.602 0 Td ( not critical: the same element accessed multiple times) Tj
+ET
+Q q 612 760.32 m 301.44 760.32 l 301.44 0 l 612 0 l h W n
+1.000 g 1.000 G
+333.6 423.84 m 543.84 423.84 l 543.84 417.12 l 333.6 417.12 l h f*
+BT
+0 g 0 G
+/F1 1 Tf
+4.93 0 0 4.93 0 0 Tm
+4.93 0 0 4.93 0 0 Tm 67.708 85.272 Td (Craig Chambers) Tj
+20.538 0 Td (149) Tj
+18.452 0 Td (CSE 501) Tj
+ET
+0.48 w
+3.86 M
+[] 0 d
+309.6 417.32 m 309.6 748.12 l 309.6 749.191 310.026 750.219 310.783 750.977 c 311.541 751.734 312.569 752.16 313.64 752.16 c 563.8 752.16 l 564.871 752.16 565.899 751.734 566.657 750.977 c 567.414 750.219 567.84 749.191 567.84 748.12 c 567.84 417.32 l 567.84 416.248 567.414 415.221 566.657 414.463 c 565.899 413.706 564.871 413.28 563.8 413.28 c 313.64 413.28 l
+312.569 413.28 311.541 413.706 310.783 414.463 c 310.026 415.221 309.6 416.248 309.6 417.32 c h S
+1.000 g 1.000 G
+325.92 728.16 m 552 728.16 l 552 437.28 l 325.92 437.28 l h f*
+BT
+0 g 0 G
+/F2 1 Tf
+8.97 0 0 8.97 0 0 Tm
+8.97 0 0 8.97 0 0 Tm 36.312 80.501 Td (Blocking) Tj
+/F3 1 Tf
+4.502 0 Td (a.k.a.) Tj
+/F2 1 Tf
+2.446 0 Td ( Tiling) Tj
+/F3 1 Tf
+8.07 0 0 8.07 0 0 Tm
+8.07 0 0 8.07 0 0 Tm 40.362 86.051 Td (Restructure loop so that it revisits a chunk that) Tj
+8.07 0 0 8.07 0 0 Tm 41.862 84.772 Td (fits in register/cache/page before moving on) Tj
+/F4 1 Tf
+8.07 0 0 8.07 0 0 Tm 40.862 81.660 Td (for k\325 := 1 to L by ChunkSize) Tj
+8.07 0 0 8.07 0 0 Tm 42.864 80.104 Td (for i := 1 to N) Tj
+8.07 0 0 8.07 0 0 Tm 44.864 78.548 Td (for j := 1 to M) Tj
+8.07 0 0 8.07 0 0 Tm 46.865 76.991 Td (for k := k\325 to k\325+ChunkSize-1) Tj
+8.07 0 0 8.07 0 0 Tm 48.866 75.435 Td (c[i,j] += a[i,k] * b[k,j]) Tj
+/F3 1 Tf
+8.07 0 0 8.07 0 0 Tm 40.362 70.767 Td (Implement transformation with combination of) Tj
+8.07 0 0 8.07 0 0 Tm 41.862 69.488 Td (strip mining + loop interchange) Tj
+ET
+Q q 612 396 m 26.88 396 l 26.88 0 l 612 0 l h W n
+1.000 g 1.000 G
+59.52 59.04 m 269.28 59.04 l 269.28 52.8 l 59.52 52.8 l h f*
+BT
+0 g 0 G
+/F1 1 Tf
+4.93 0 0 4.93 0 0 Tm
+4.93 0 0 4.93 0 0 Tm 12.028 11.337 Td (Craig Chambers) Tj
+20.538 0 Td (150) Tj
+18.452 0 Td (CSE 501) Tj
+ET
+0.48 w
+3.86 M
+[] 0 d
+35.04 52.52 m 35.04 383.8 l 35.04 384.871 35.466 385.899 36.223 386.657 c 36.981 387.414 38.009 387.84 39.08 387.84 c 289.24 387.84 l 290.311 387.84 291.339 387.414 292.097 386.657 c 292.854 385.899 293.28 384.871 293.28 383.8 c 293.28 52.52 l 293.28 51.448 292.854 50.421 292.097 49.663 c 291.339 48.906 290.311 48.48 289.24 48.48 c 39.08 48.48 l
+38.009 48.48 36.981 48.906 36.223 49.663 c 35.466 50.421 35.04 51.449 35.04 52.52 c h S
+1.000 g 1.000 G
+51.36 363.36 m 277.44 363.36 l 277.44 72.96 l 51.36 72.96 l h f*
+BT
+0 g 0 G
+/F2 1 Tf
+8.97 0 0 8.97 0 0 Tm
+8.97 0 0 8.97 0 0 Tm 5.710 39.865 Td (Strip mining) Tj
+/F3 1 Tf
+8.07 0 0 8.07 0 0 Tm
+8.07 0 0 8.07 0 0 Tm 6.347 40.884 Td (Strip mining: turn single loop into 2 loops) Tj
+8.07 0 0 8.07 0 0 Tm 7.348 39.327 Td (\245) Tj
+1.000 0 Td (inner loop up to some chunk size) Tj
+8.07 0 0 8.07 0 0 Tm 7.348 37.771 Td (\245) Tj
+1.000 0 Td (outer loop repeats chunks till done) Tj
+8.07 0 0 8.07 0 0 Tm 6.347 33.103 Td (Before:) Tj
+/F4 1 Tf
+8.07 0 0 8.07 0 0 Tm 6.848 31.546 Td (for k := 1 to L) Tj
+8.07 0 0 8.07 0 0 Tm 8.849 29.990 Td (c[i,j] += a[i,k] * b[k,j]) Tj
+/F3 1 Tf
+8.07 0 0 8.07 0 0 Tm 6.347 26.877 Td (After:) Tj
+/F4 1 Tf
+8.07 0 0 8.07 0 0 Tm 6.848 25.322 Td (for k\325 := 1 to L by ChunkSize) Tj
+8.07 0 0 8.07 0 0 Tm 8.849 23.766 Td (for k := k\325 to k\325+ChunkSize-1) Tj
+8.07 0 0 8.07 0 0 Tm 10.849 22.209 Td (c[i,j] += a[i,k] * b[k,j]) Tj
+ET
+Q q 612 396 m 301.44 396 l 301.44 0 l 612 0 l h W n
+1.000 g 1.000 G
+333.6 59.04 m 543.84 59.04 l 543.84 52.8 l 333.6 52.8 l h f*
+BT
+0 g 0 G
+/F1 1 Tf
+4.93 0 0 4.93 0 0 Tm
+4.93 0 0 4.93 0 0 Tm 67.708 11.337 Td (Craig Chambers) Tj
+20.538 0 Td (151) Tj
+18.452 0 Td (CSE 501) Tj
+ET
+0.48 w
+3.86 M
+[] 0 d
+309.6 52.52 m 309.6 383.8 l 309.6 384.871 310.026 385.899 310.783 386.657 c 311.541 387.414 312.569 387.84 313.64 387.84 c 563.8 387.84 l 564.871 387.84 565.899 387.414 566.657 386.657 c 567.414 385.899 567.84 384.871 567.84 383.8 c 567.84 52.52 l 567.84 51.448 567.414 50.421 566.657 49.663 c 565.899 48.906 564.871 48.48 563.8 48.48 c 313.64 48.48 l
+312.569 48.48 311.541 48.906 310.783 49.663 c 310.026 50.421 309.6 51.449 309.6 52.52 c h S
+1.000 g 1.000 G
+325.92 363.36 m 552 363.36 l 552 72.96 l 325.92 72.96 l h f*
+BT
+0 g 0 G
+/F2 1 Tf
+8.97 0 0 8.97 0 0 Tm
+8.97 0 0 8.97 0 0 Tm 36.312 39.865 Td (Loop interchange) Tj
+/F3 1 Tf
+8.07 0 0 8.07 0 0 Tm
+8.07 0 0 8.07 0 0 Tm 40.362 40.884 Td (Apply loop interchange to move outer strip-mined loop outside) Tj
+8.07 0 0 8.07 0 0 Tm 41.862 39.605 Td (of enclosing loop\(s\)) Tj
+8.07 0 0 8.07 0 0 Tm 40.362 34.937 Td (Before:) Tj
+/F4 1 Tf
+8.07 0 0 8.07 0 0 Tm 40.862 33.380 Td (for i := 1 to N) Tj
+8.07 0 0 8.07 0 0 Tm 42.864 31.824 Td (for j := 1 to M) Tj
+8.07 0 0 8.07 0 0 Tm 44.864 30.268 Td (for k\325 := 1 to L by ChunkSize) Tj
+8.07 0 0 8.07 0 0 Tm 46.865 28.713 Td (for k := k\325 to k\325+ChunkSize-1) Tj
+8.07 0 0 8.07 0 0 Tm 48.866 27.156 Td (c[i,j] += a[i,k] * b[k,j]) Tj
+/F3 1 Tf
+8.07 0 0 8.07 0 0 Tm 40.362 24.043 Td (After:) Tj
+/F4 1 Tf
+8.07 0 0 8.07 0 0 Tm 40.862 22.487 Td (for k\325 := 1 to L by ChunkSize) Tj
+8.07 0 0 8.07 0 0 Tm 42.864 20.931 Td (for i := 1 to N) Tj
+8.07 0 0 8.07 0 0 Tm 44.864 19.374 Td (for j := 1 to M) Tj
+8.07 0 0 8.07 0 0 Tm 46.865 17.819 Td (for k := k\325 to k\325+ChunkSize-1) Tj
+8.07 0 0 8.07 0 0 Tm 48.866 16.263 Td (c[i,j] += a[i,k] * b[k,j]) Tj
+ET
+Q
+
+endstream
+endobj
+8 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources << /Font << /F1 10 0 R /F2 12 0 R /F3 14 0 R /F4 16 0 R >> /ProcSet 4 0 R >>
+/Annots [ ]
+/Contents 9 0 R
+>>
+endobj
+9 0 obj
+<<
+/Length 20 0 R
+>>
+stream
+q
+Q q
+1.000 g 1.000 G
+0 0 m 612 0 l 612 792.0 l 0 792.0 l 0 0 l  f
+Q q 612 760.32 m 26.88 760.32 l 26.88 0 l 612 0 l h W n
+1.000 g 1.000 G
+59.52 423.84 m 269.28 423.84 l 269.28 417.12 l 59.52 417.12 l h f*
+BT
+0 g 0 G
+/F1 1 Tf
+4.93 0 0 4.93 0 0 Tm
+4.93 0 0 4.93 0 0 Tm 12.028 85.272 Td (Craig Chambers) Tj
+20.538 0 Td (152) Tj
+18.452 0 Td (CSE 501) Tj
+ET
+0.48 w
+3.86 M
+[] 0 d
+35.04 417.32 m 35.04 748.12 l 35.04 749.191 35.466 750.219 36.223 750.977 c 36.981 751.734 38.009 752.16 39.08 752.16 c 289.24 752.16 l 290.311 752.16 291.339 751.734 292.097 750.977 c 292.854 750.219 293.28 749.191 293.28 748.12 c 293.28 417.32 l 293.28 416.248 292.854 415.221 292.097 414.463 c 291.339 413.706 290.311 413.28 289.24 413.28 c 39.08 413.28 l
+38.009 413.28 36.981 413.706 36.223 414.463 c 35.466 415.221 35.04 416.248 35.04 417.32 c h S
+1.000 g 1.000 G
+51.36 728.16 m 277.44 728.16 l 277.44 437.28 l 51.36 437.28 l h f*
+BT
+0 g 0 G
+/F2 1 Tf
+8.97 0 0 8.97 0 0 Tm
+8.97 0 0 8.97 0 0 Tm 5.710 80.501 Td (Do again) Tj
+/F3 1 Tf
+8.07 0 0 8.07 0 0 Tm
+8.07 0 0 8.07 0 0 Tm 6.347 86.051 Td (Block the) Tj
+/F4 1 Tf
+4.393 0 Td (j) Tj
+/F3 1 Tf
+0.601 0 Td ( loop, too) Tj
+/F4 1 Tf
+8.07 0 0 8.07 0 0 Tm 6.848 82.938 Td (for k\325 := 1 to L by ChunkSize) Tj
+8.07 0 0 8.07 0 0 Tm 8.849 81.383 Td (for j\325 := 1 to M by ChunkSize) Tj
+8.07 0 0 8.07 0 0 Tm 10.849 79.827 Td (for i := 1 to N) Tj
+8.07 0 0 8.07 0 0 Tm 12.850 78.270 Td (for j := j\325 to j\325+ChunkSize-1) Tj
+8.07 0 0 8.07 0 0 Tm 14.851 76.714 Td (for k := k\325 to k\325+ChunkSize-1) Tj
+8.07 0 0 8.07 0 0 Tm 16.851 75.157 Td (c[i,j] += a[i,k] * b[k,j]) Tj
+ET
+Q
+
+endstream
+endobj
+10 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Times-Roman
+/Encoding 11 0 R
+/FirstChar 0
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Encoding
+/BaseEncoding /MacRomanEncoding
+/Differences [ 32 /space 161 /.notdef 177 /.notdef 181 /.notdef 202 /.notdef 214 /.notdef 255 /caron ]
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /Helvetica-Bold
+/Encoding 13 0 R
+/FirstChar 0
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Encoding
+/BaseEncoding /MacRomanEncoding
+/Differences [ 32 /space 161 /.notdef 177 /.notdef 181 /.notdef 202 /.notdef 214 /.notdef 255 /caron ]
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F3
+/BaseFont /Helvetica
+/Encoding 15 0 R
+/FirstChar 0
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Encoding
+/BaseEncoding /MacRomanEncoding
+/Differences [ 32 /space 161 /.notdef 177 /.notdef 181 /.notdef 202 /.notdef 214 /.notdef 255 /caron ]
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F4
+/BaseFont /Courier
+/Encoding 17 0 R
+/FirstChar 0
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Encoding
+/BaseEncoding /MacRomanEncoding
+/Differences [ 32 /space 161 /.notdef 177 /.notdef 181 /.notdef 202 /.notdef 214 /.notdef 255 /caron ]
+>>
+endobj
+18 0 obj
+<<
+/CreationDate (D:20190906163151+00'00')
+/Producer (PStill Engine 1.88)
+/Title (55571798)
+>>
+endobj
+19 0 obj
+7501
+endobj
+20 0 obj
+1599
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000000015 00000 n 
+0000000096 00000 n 
+0000000142 00000 n 
+0000000233 00000 n 
+0000000288 00000 n 
+0000000310 00000 n 
+0000000473 00000 n 
+0000008027 00000 n 
+0000008190 00000 n 
+0000009842 00000 n 
+0000009969 00000 n 
+0000010142 00000 n 
+0000010272 00000 n 
+0000010445 00000 n 
+0000010570 00000 n 
+0000010743 00000 n 
+0000010866 00000 n 
+0000011039 00000 n 
+0000011150 00000 n 
+0000011171 00000 n 
+trailer
+<<
+/Size 21
+/Root 1 0 R
+/Info 18 0 R
+/ID[<2b6812c4852e4012f234c48d70752008><2b6812c4852e4012f234c48d70752008>]
+>>
+startxref
+11192
+%%EOF
+%BeginExifToolUpdate
+1 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+/Dests 5 0 R
+/PageMode /UseNone
+/Metadata 21 0 R
+>>
+endobj
+18 0 obj
+<<
+/Creator (Zamzar)
+/Producer (Zamzar)
+>>
+endobj
+21 0 obj
+<<
+/Type /Metadata
+/Subtype /XML
+/Length 3156
+>>
+stream
+<?xpacket begin='Ôªø' id='W5M0MpCehiHzreSzNTczkc9d'?>
+<x:xmpmeta xmlns:x='adobe:ns:meta/'>
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+
+ <rdf:Description rdf:about=''
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <dc:creator>
+   <rdf:Seq>
+    <rdf:li>Zamzar</rdf:li>
+   </rdf:Seq>
+  </dc:creator>
+ </rdf:Description>
+
+ <rdf:Description rdf:about=''
+  xmlns:pdf='http://ns.adobe.com/pdf/1.3/'>
+  <pdf:Producer>Zamzar</pdf:Producer>
+ </rdf:Description>
+
+ <rdf:Description rdf:about=''
+  xmlns:tiff='http://ns.adobe.com/tiff/1.0/'>
+  <tiff:Copyright>
+   <rdf:Alt>
+    <rdf:li xml:lang='x-default'>Zamzar</rdf:li>
+   </rdf:Alt>
+  </tiff:Copyright>
+ </rdf:Description>
+</rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+<?xpacket end='w'?>
+endstream
+endobj
+xref
+0 2
+0000000000 65535 f 
+0000011787 00000 n 
+18 1
+0000011885 00000 n 
+21 1
+0000011944 00000 n 
+trailer
+<<
+/Size 22
+/Root 1 0 R
+/Info 18 0 R
+/ID [ <2b6812c4852e4012f234c48d70752008> <2c6812c4852e4012f234c48d70752008> ]
+/Prev 11192
+>>
+%EndExifToolUpdate 11766
+startxref
+15184
+%%EOF

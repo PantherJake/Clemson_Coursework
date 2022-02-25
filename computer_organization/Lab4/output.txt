@@ -1,0 +1,30 @@
+TESTING nget() =================================
+Initial Test value: 2468ACEF
+  Position 0=00000002
+  Position 1=00000004
+  Position 2=00000006
+  Position 3=00000008
+  Position 4=0000000A
+  Position 5=0000000C
+  Position 6=0000000E
+  Position 7=0000000F
+TESTING nset() =================================
+Initial Test value: 2468ACEF
+  Setting position 0, result=0468ACEF
+  Setting position 1, result=0168ACEF
+  Setting position 2, result=0128ACEF
+  Setting position 3, result=0123ACEF
+  Setting position 4, result=01234CEF
+  Setting position 5, result=012345EF
+  Setting position 6, result=0123456F
+  Setting position 7, result=01234567
+TESTING nlrotate() =================================
+Initial Test value: 2468ACEF
+   Rotate 0, result=468ACEF2
+   Rotate 1, result=68ACEF24
+   Rotate 2, result=8ACEF246
+   Rotate 3, result=ACEF2468
+   Rotate 4, result=CEF2468A
+   Rotate 5, result=EF2468AC
+   Rotate 6, result=F2468ACE
+   Rotate 7, result=2468ACEF

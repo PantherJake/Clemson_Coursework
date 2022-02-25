@@ -1,0 +1,5 @@
+insert 7
+remove 3
+find 2
+print
+quit

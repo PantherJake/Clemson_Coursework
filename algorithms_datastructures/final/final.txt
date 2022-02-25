@@ -1,0 +1,140 @@
+CpSc 2120 Fall 2020
+Final Exam.  25 possible points.  
+
+Please upload on handin any files requested by the directions of
+individual problems.  You use any resources you want for this exam
+except you may not consult other sentient life forms.  The exam has
+three coding questions and one non-coding question.  Please read the
+instructions for each part carefully.  Good luck!
+
+
+1. True / False (5 points)
+
+Please answer the short list of true/false questions given in the file
+tf.txt.  Your answers should be written to the file answers.txt, each
+line of which should contain just "T" or "F" and provide the answer to
+a single question (i.e., line 4 of answers.txt should provide the
+answer to question #4).  Your score depends on the number of questions
+you answer correctly; if you answer them all correctly, you will
+receive full credit.  If you provide an answer other than T or F for
+any question, your entire answers.txt file will be treated as invalid.
+
+For your assistance, you are provided with a program called check.cpp
+that reads tf.txt and answers.txt and tells you how many questions you
+have answered correctly.
+
+Please submit answers.txt along with any code you write for this part
+on handin.  Name your program part1.cpp.  For potential partial
+credit, if you didn't answer all the questions correctly, you may also
+include in your part1.cpp file a comment describing in English the
+strategy you intended to employ.
+
+
+2. Word Ladder with a Broken Rung (5 points)
+
+This question builds on the word ladder problem from lab 10, and uses
+the same input file words5.txt.  There is no word ladder from "cruel"
+to "final".  However, if we are allowed to add one new made-up
+5-letter word to the words.txt file, it now becomes possible to find
+such a word ladder.  Please determine the length of the shortest such
+ladder that can be built this way (you don't need to print the ladder
+itself), and submit any code you use for this part to handin.  Name
+your file part2.cpp.  As in the previous part, you can include English
+comments in your code outlining your approach for partial credit.  For
+full credit, your code needs to run in less than 1 second.
+
+
+3. Order By Frequency (5 points)
+
+The input to this part is a list of N integers, each at most N,
+arriving from standard input.  Write efficient code that reads these
+integers and prints out every **distinct** value in descending order
+of frequency count; values occurring the same number of times should
+appear in increasing sorted order by value.  For example, if the input
+is 7, 3, 3, 1, 3, 5, 3, 2, 5, 2, then you should print out the
+following numbers, one per line: 3, 2, 5, 1, 7.  The 3 is first since
+it has the highest frequency count (it occurs 4 times).  Name your
+file part3.cpp and submit it to handin.  For partial credit, as
+before, you can include an English comment in your code describing
+your approach.
+
+
+4. Running Times (10 points)
+
+This part asks you to write down 10 running times.  Put these, one per
+line, in a file called part4.txt and submit it on handin.  Give the
+most precise characterization of running time possible (e.g., use
+Theta bounds if possible).
+
+4(a). What is the worst-case running time of your solution for part 3?
+(if you haven't submitted a solution for part 3, you might want to
+submit something trivial so you can at least easily answer this
+question...)
+
+
+4(b). The following code implements breadth-first search.  In terms of
+the number of nodes n and the number of edges m, what is the worst-case
+running time?
+
+
+// nbrs[x] is a vector of all nodes that are neighbors of x
+map<int,vector<int>> nbrs;   
+
+// n is the total number of nodes in our graph
+int breadth_first_search(int source, int destination, int n)
+{
+  unordered_map<int, int> dist;
+  for (int i=0; i<n; i++) dist[i] = n;
+  dist[source] = 0;
+  queue<int> to_visit;
+  to_visit.push(source);
+  while (!to_visit.empty()) {
+    int x = to_visit.front();
+    to_visit.pop();
+    for (int y : nbrs[x])
+      if (dist[y] == n) {
+	dist[y] = dist[x] + 1;
+	to_visit.push(y);
+      }
+  }
+  return dist[destination];
+}
+
+4(c). In terms of N and M, what is the running time of Dr. Dean's
+solution for part 3 of homework #4?  (N and M here refer to the
+variables by these names being used in Dr. Dean's code)
+
+
+4(d). What is the running time of this code as a function of N:
+
+void foo(int N) { if (N>10) foo(N/3); }
+
+
+4(e). What is the running time of this code as a function of N:
+
+for (int i=0; i<N; i++)
+  i++;
+for (int j=0; j<N; j++)
+  j++;
+for (int k=N; k>0; k=k/2)
+  k /= 2;
+
+4(f). What is the fastest possible worst-case running time for sorting
+a list of 2120 integers?
+
+4(g). What is the worst-case running time for the fastest possible
+running time for building a kD tree on N points in 3 dimensions?
+
+4(h). What is the fastest possible worst-case running time for
+converting a binary search tree on N elements into a binary heap on N
+elements?
+
+4(i). What is the fastest possible worst-case running time for sorting
+an N-element array whose first half is increasing and whose second
+half is decreasing?
+
+4(j). Given N integers in stored a balanced BST, you want to find the
+smallest value of V such that you can fit at least half of the
+integers into a range of size V.  What is the fastest possible
+worst-case running time for solving this problem?
+

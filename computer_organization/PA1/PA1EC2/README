@@ -1,0 +1,15 @@
+Issues I Ran Into:
+
+1. First major problem I had to figure out was the enumeration and how that worked. At first I tried to do an enumeration with 
+strings rather than making an enumeration with variable names for their number placeholder. I went to office hours on 3/12 in the
+morning to ask a question on this. Once I noticed that the enumeration was actually supposed to be used for indexing an array of
+constant strings it made much more sense.
+
+2. Second major problem I had to figure out was printing the final temp node. For a while my print functions would only print to the
+second to last node because I had the loop set to (if (temp->next != NULL) temp = temp->next;) which ignores the last node. This is
+the syntax I would use if I was adding a node to the list, but when printing you want to include the final node so temp->next in the if
+statement should if (if (temp != NULL)).
+
+3. Third major problem was trying to do the extra credit 2 portion. I ended up having to close the file after each time I called a print
+and reopened it with the next cycle in the loop (assuming the user enters a valid number). Before this I just tried closing the file at the end
+of the loop but that did not give expected output. 
